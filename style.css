@@ -54,12 +54,13 @@ body {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
+  list-style: none;
 }
 
 .btn:hover {
   color: #cecdcd;
   border-radius: 10px;
-  border-bottom: 2px solid var(--text-description-color);
+  color:var(--text-description-color);
 }
 
 .livros {
