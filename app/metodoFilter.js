@@ -7,7 +7,7 @@ botoes.forEach ( botao => {
 function filtraOBotaoUtilizado () {
     const elementobtnID = document.getElementById (this.id)
     const categoria =elementobtnID.value
-    const livrosFiltrados = livros.filter (
+    let livrosFiltrados = categoria == 'disponiveis' ? livros.filter (livro=>livro.quantidade >0) :livros.filter (
          livro => livro.categoria == categoria
         )
         adicionarLivroNaTela (livrosFiltrados)
