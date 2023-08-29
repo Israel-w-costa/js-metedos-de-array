@@ -1,10 +1,12 @@
 
 const elementoParaInseriLivros = document.querySelector ("#livros")
-
+const valorTotalLivrosDisponiveis = document.querySelector ("#valor_total_livros_disponiveis")
 
 function adicionarLivroNaTela(listaDeLivros) {
   elementoParaInseriLivros.innerHTML = ''  
   listaDeLivros.forEach(livro => {
+  valorTotalLivrosDisponiveis.innerHTML= ''
+    
     let disponivel = livro.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel'
         elementoParaInseriLivros.innerHTML +=`
         <div class="livro">
