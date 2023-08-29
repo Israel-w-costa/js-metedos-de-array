@@ -12,7 +12,6 @@ function filtraOBotaoUtilizado () {
         )
         adicionarLivroNaTela (livrosFiltrados)
         valortotal = precoDosLivrosDisponiveis (livrosFiltrados)
-        console.log (valortotal)
         if (categoria == 'disponiveis') {
             valorTotalLivrosDisponiveis.innerHTML = `<div class="livros__disponiveis">
             <p>Todos os livros disponíveis por R$ <span id="valor">${valortotal}</span></p>
